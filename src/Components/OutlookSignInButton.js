@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import { PublicClientApplication } from '@azure/msal-browser';
+import { AiOutlineMail } from 'react-icons/ai';
+
+
 
 function OutlookSignInButton() {
   // Create a new instance of MSAL PublicClientApplication
@@ -59,9 +62,10 @@ function OutlookSignInButton() {
 
   // Render the Outlook Sign-In button
   return (
-    <div className="outlook-signin-button">
-      <button className='decoration-blue-300 bg-green-500 hover:bg-green-700 text-white  py-2 px-4 rounded flex items-center justify-center'  onClick={handleOutlookSignIn}>Sign in with Outlook</button>
-    </div>
+
+      <button className='outlooksingIn items-center justify-center'  onClick={handleOutlookSignIn}>
+        <div>     <AiOutlineMail color="#0078D4" size={20} /></div>Sign in with Outlook</button>
+
   );
 }
 

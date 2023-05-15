@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import { IoLogoGoogle } from 'react-icons/io';
+
 function GoogleSignInButton() {
   useEffect(() => {
     const loadGoogleAPI = () => {
@@ -15,7 +17,7 @@ function GoogleSignInButton() {
         callback: handleGoogleSignIn,
       });
     };
-
+ 
     const handleGoogleSignIn = (response) => {
       const { credential } = response;
       const idToken = credential.id;
@@ -35,8 +37,8 @@ function GoogleSignInButton() {
   }, []);
 
   return (
-    <button className="decoration-blue-300 bg-green-500 hover:bg-green-700 text-white  py-2 px-4 rounded flex items-center justify-center">
-      Sign in with Google
+    <button className="   py-2 px-4 rounded flex items-center justify-center goggleSignInBotton">
+      <IoLogoGoogle color="#0078D4" size={20}/> Sign in with Google
     </button>
   );
 }

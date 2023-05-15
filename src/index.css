@@ -12,8 +12,13 @@ code {
     monospace;
 }
 body {
-  background-image: url(./Images/backgroundImage.png);
+  background-image: url(./Images/backgroundImage.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
 }

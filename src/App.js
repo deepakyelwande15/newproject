@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
-import SignInPage from './Components/SignInPage';
+import LoginInPage from './Components/LoginInPage';
 
 
 function App() {
   return (
     <div className="App">
-      <SignInPage />
+      <LoginInPage />
+
     </div>
   );
 }

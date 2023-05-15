@@ -1,0 +1,205 @@
+.parent-container {
+  width: 1440px;
+}
+
+.myInput,
+.myPass {
+  width: 360px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  background: #ffffff;
+  /* Neutral/5 */
+
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+.signIButton {
+  background-color: #1890ff;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 32px;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6.4px 15px;
+  gap: 10px;
+
+  width: 360px;
+  height: 40px;
+
+  background: #1890ff;
+  /* Primary/6 */
+
+  border: 1px solid #1890ff;
+  /* drop-shadow/button-primary */
+
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.loginCard {
+  margin: 100px 859px 143px 284px;
+  width: "450px";
+  height: "563px";
+  box-shadow: "(0px 4px 10px rgba(0, 0, 0, 0.1)";
+
+  margin-bottom: 143px;
+  gap: 8px;
+
+  position: absolute;
+  width: 450px;
+  height: 563px;
+
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(143, 168, 191, 0.35);
+}
+.goggleSignInBotton,
+.outlooksingIn {
+  color: #1890ff;
+  font-weight: 400;
+  size: 16px;
+  line-height: 24px;
+
+  box-sizing: border-box;
+
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6.4px 15px;
+  gap: 10px;
+  margin-top: 25px;
+
+  width: 360px;
+  height: 38.8px;
+
+  background: #ffffff;
+  /* Primary/6 */
+
+  border: 1px solid #1890ff;
+  /* drop-shadow/button-primary */
+
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Stollelogo {
+  width: 202.78px;
+  height: 63px;
+
+  margin-left: 109.5px;
+  margin-top: 45px;
+  margin-right: 120.58px;
+
+  /* Inside auto layout */
+}
+P {
+  width: 21px;
+  height: 24px;
+  left: 169px;
+  top: 199px;
+
+  /* H5/regular */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-left: 170px;
+
+  color: #c8c8c8;
+}
+.globe-image {
+  display: flex;
+  flex-direction: row-reverse;
+
+  left: 35.33%;
+  right: -6.52%;
+  top: 10.94%;
+  bottom: 6.22%;
+
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+
+/* CSS for devices below 991px */
+@media (max-width: 991px) {
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loginCard {
+    margin-bottom: 20px;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+
+  .Stollelogo {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .myInput,
+  .myPass {
+    width: 100%;
+  }
+
+  .signIButton {
+    width: 100%;
+  }
+
+  .flex.flex-col.space-y-2 {
+    margin-top: 20px;
+  }
+
+  .globe-image {
+    width: 100%;
+    max-width: 60%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .globe-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
